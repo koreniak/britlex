@@ -1,0 +1,401 @@
+:root {
+    --primary-brand-color: #263238;
+    --secondary-brand-color: #8F95A5;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --logo-color: #939393;
+    --background-secondary-color: #F5F5F5;
+    --price-backgroud-color: #EEEEEE;
+    --price-term-color: #546269;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--secondary-brand-color);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1368px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    outline: 2px solid tomato;
+}
+
+/* .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+} */
+
+.button {
+    background-color: var(--primary-brand-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+.header-list {
+    display: flex;
+    gap: 121px;
+}
+
+.logo {
+    color: var(--black-color);
+
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.logo-span {
+    color: var(--logo-color);
+}
+
+.navigation {
+    display: flex;
+    gap: 236px;
+    align-items: center;
+}
+
+.navigation-link {
+    color: var(--primary-brand-color);
+
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cont-list {
+    display: flex;
+    gap: 50px;
+}
+
+.cont-btn {
+    background-color: var(--white-color);
+    color: var(--primary-brand-color);
+
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    display: inline-block;
+    min-width: 312px;
+    padding: 20px 56px;
+    border: 2px solid #263238;
+    border-radius: 10px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    gap: 180px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-title {
+    color: var(--black-color);
+
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+
+    width: 386px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 34px;
+}
+
+.hero-bulb {
+    margin-bottom: 40px;
+}
+
+.hero-title-bulb {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.hero-descr {
+    font-size: 24px;
+    line-height: 1.5;
+
+    width: 540px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.hero-btn {
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    min-width: 426px;
+    padding: 23px 64px;
+}
+
+.section-title {
+    color: var(--black-color);
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+/* === Skills === */
+
+.skills-list {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.skills-item {
+    background-color: var(--background-secondary-color);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-subtitle {
+    color: var(--primary-brand-color);
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
+
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.skills-speaking-item {
+    flex-basis: calc((100% - 60px) / 3);
+
+    padding: 32px 18px;
+}
+
+.skills-writing-reading {
+    display: flex;
+    gap: 30px;
+}
+
+.skills-writing-reading-item {
+    flex-basis: calc((100% - 30px) / 2);
+
+    padding: 32px 18px;
+}
+
+.skills-writing-reading-listening {
+    display: flex;
+    flex-basis: calc((100% / 3) * 2);
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills-writing-reading-listening-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 218px;
+}
+
+.skills-listening-item {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 114px;
+    padding: 32px 18px;
+}
+
+.skills-descr {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.skills-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+
+    width: 230px;
+    padding: 17px 63px 16px 64px;
+}
+
+/* === About === */
+
+.about {
+    display: flex;
+    gap: 146px;
+}
+
+.about-title {
+    text-align: inherit;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    gap: 131px;
+}
+
+.about-item {
+    flex-basis: 108px;
+}
+
+.about-subtitle {
+    margin-bottom: 6px;
+}
+
+.about-descr {
+    line-height: 1.8;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.about-sec-descr {
+    line-height: 1.5;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* === Pricing === */
+
+.pricing-subtitle {
+    color: var(--primary-brand-color);
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pricing-descr {
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.price-container {
+    background-color: var(--price-backgroud-color);
+    border-radius: 5px;
+
+    display: flex;
+    flex-basis: 260px;
+    padding: 5px 22.5px 4px 23px;
+}
+
+.price {
+    color: var(--primary-brand-color);
+
+    font-size: 24px;
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.price-term {
+    color: var(--price-term-color);
+
+    font-size: 18px;
+    line-height: 1.5px;
+}
+
+.contus-descr {
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contus-form-btn {
+    display: flex;
+}
+
+.contus-form {
+    display: flex;
+    align-items: center;
+
+}
+
+.contus-label {
+    font-size: 16px;
+    line-height: 1.88;
+    position: absolute;
+}
+
+.contus-input {
+    border: 1px solid #8F95A5;
+    border-radius: 10px;
+
+    width: 425px;
+    height: 70px;
+}
+
+.contus-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    min-width: 312px;
+    padding: 20px 56px;
+}
+
+.footer-item {
+    color: var(--secondary-brand-color);
+
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
